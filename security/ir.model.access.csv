@@ -1,0 +1,13 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_project_task,project.task,project.model_project_task,project.group_project_user,1,0,0,0
+access_project_task_manager,project.task,project.model_project_task,project.group_project_manager,1,1,1,1
+
+project_task_priority_manager,task.priority,model_payall_task_priority,project.group_project_manager,1,1,1,1
+project_task_priority_user,task.priority,model_payall_task_priority,project.group_project_user,1,0,0,0
+
+project_task_peso_manager,task.peso,model_payall_task_peso,project.group_project_manager,1,1,1,1
+project_task_peso_user,task.peso,model_payall_task_peso,project.group_project_user,1,0,0,0
+
+project_task_type_manager,task.type,model_payall_task_type,project.group_project_manager,1,1,1,1
+project_task_type_user,task.type,model_payall_task_type,project.group_project_user,1,0,0,0
+account_analytic_line_all,All users example,model_account_analytic_line,payall_project_user,1,0,0,0

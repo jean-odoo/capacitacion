@@ -1,0 +1,64 @@
+<odoo>
+    <data>
+        <record id="payall_task_type_1" model="payall.task.type">
+            <field name="name">Análisis</field>
+        </record>
+        <record id="payall_task_type_2" model="payall.task.type">
+            <field name="name">Diseño</field>
+        </record>
+        <record id="payall_task_type_3" model="payall.task.type">
+            <field name="name">Desarrollo</field>
+        </record>
+        <record id="payall_task_type_4" model="payall.task.type">
+            <field name="name">Elaboración de diagramas BPMN</field>
+        </record>
+        <record id="payall_task_type_5" model="payall.task.type">
+            <field name="name">Descripción de procesos</field>
+        </record>
+        <record id="payall_task_type_6" model="payall.task.type">
+            <field name="name">Pruebas QA</field>
+        </record>
+        <record id="payall_task_type_7" model="payall.task.type">
+            <field name="name">Pruebas funcionales</field>
+        </record>
+        <record id="payall_task_type_8" model="payall.task.type">
+            <field name="name">Planificación</field>
+        </record>
+        <record id="payall_task_type_9" model="payall.task.type">
+            <field name="name">Seguimiento del proyecto</field>
+        </record>
+        <record id="payall_task_type_10" model="payall.task.type">
+            <field name="name">Reunión interna</field>
+        </record>
+        <record id="payall_task_type_11" model="payall.task.type">
+            <field name="name">Reunión Externa</field>
+        </record>
+        <record id="payall_task_type_12" model="payall.task.type">
+            <field name="name">Arreglos de Bug</field>
+        </record>
+        <record id="payall_task_type_13" model="payall.task.type">
+            <field name="name">Preparación de informes</field>
+        </record>
+        <record id="payall_task_type_14" model="payall.task.type">
+            <field name="name">Configuración/Despliegue de ambiente</field>
+        </record>
+        <record id="payall_task_type_15" model="payall.task.type">
+            <field name="name">Preparación de equipos</field>
+        </record>
+        <record id="payall_task_type_16" model="payall.task.type">
+            <field name="name">Preparación de archivos e importación</field>
+        </record>
+        <record id="payall_task_type_17" model="payall.task.type">
+            <field name="name">Elaboración tutorial</field>
+        </record>
+        <record id="payall_task_type_18" model="payall.task.type">
+            <field name="name">En Capacitación</field>
+        </record>
+        <record id="payall_task_type_19" model="payall.task.type">
+            <field name="name">Dictando Capacitación</field>
+        </record>
+        <record id="payall_task_type_20" model="payall.task.type">
+            <field name="name">Soporte por consulta</field>
+        </record>
+    </data>
+</odoo>

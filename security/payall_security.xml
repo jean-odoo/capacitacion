@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="payall_project_user" model="res.groups">
+        <field name="name"> Payall / Project User </field>
+    </record>
+</odoo>

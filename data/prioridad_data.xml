@@ -1,0 +1,13 @@
+<odoo>
+    <data>
+        <record id="payall_task_priority_1" model="payall.task.priority">
+            <field name="name">Debe</field>
+        </record>
+        <record id="payall_task_priority_2" model="payall.task.priority">
+            <field name="name">Debería</field>
+        </record>
+        <record id="payall_task_priority_3" model="payall.task.priority">
+            <field name="name">Podría</field>
+        </record>
+    </data>
+</odoo>

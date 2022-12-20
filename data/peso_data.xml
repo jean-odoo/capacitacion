@@ -1,0 +1,22 @@
+<odoo>
+    <data>
+        <record id="payall_task_peso_1" model="payall.task.peso">
+            <field name="name">0</field>
+        </record>
+        <record id="payall_task_peso_2" model="payall.task.peso">
+            <field name="name">1</field>
+        </record>
+        <record id="payall_task_peso_3" model="payall.task.peso">
+            <field name="name">2</field>
+        </record>
+        <record id="payall_task_peso_4" model="payall.task.peso">
+            <field name="name">3</field>
+        </record>
+        <record id="payall_task_peso_5" model="payall.task.peso">
+            <field name="name">5</field>
+        </record>
+        <record id="payall_task_peso_6" model="payall.task.peso">
+            <field name="name">8</field>
+        </record>
+    </data>
+</odoo>

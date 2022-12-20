@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <record id="project_task_view_graph_inherited_new" model="ir.ui.view">
+            <field name="name">project.task.view.graph.inherited.new</field>
+            <field name="model">report.project.task.user</field>
+            <field name="inherit_id" ref="project.view_task_project_user_graph"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='hours_planned']" position='after'>
+                    <field name="peso_computed" type="measure"/>
+                    <field name="priority_payall"/>
+                    <field name="sprint" type="measure"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
