@@ -42,6 +42,19 @@ class ProjectTask( models.Model):
                 "El usuario " + self.env.user.display_name + " ha modificado el peso a  " + self.peso.name,
                 message_type = "comment"
             )
+
+        if 'sprint' in vals and vals['sprint'] and result:
+            self.sudo().message_post( body = 
+                "El usuario " + self.env.user.display_name + " ha modificado el sprint a  " + str(self.sprint),
+                message_type = "comment"
+            )
+
+        if 'priority_payall' in vals and vals['priority_payall'] and result:
+            self.sudo().message_post( body = 
+                "El usuario " + self.env.user.display_name + " ha modificado la prioridad a  " + self.priority_payall.name,
+                message_type = "comment"
+            )    
+        
     
     @api.onchange('peso')
     def _getPesoComputed(self):
