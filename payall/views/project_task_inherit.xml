@@ -1,4 +1,3 @@
-<!-- Herencias de project task -->
 <odoo>
     <data>
         <record model="ir.ui.view" id="project_task_view_form_inherited_new_2">
