@@ -1,0 +1,28 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="project_payall_task_peso_list">
+            <field name="name">project.payall.task.peso.list</field>
+            <field name="model">payall.task.peso</field>
+            <field name="arch" type="xml">
+                <tree editable="top" create="1" delete="1" multi_edit="1" string="Prioridad de las actividades">
+                    <field name = "name" required="1"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="project_payall_task_peso_action">
+            <field name="name">Peso</field>
+            <field name="res_model">payall.task.peso</field>
+            <field name="view_mode">list</field>
+            <field name="help" type="html"> <p class="o_view_nocontent_smiling_face"> Crear peso</p> </field>
+        </record>
+
+        <menuitem
+            id = "menu_payall_task_peso"
+            groups = "project.group_project_manager"
+            parent = "project.menu_project_config"
+            sequence = "7"
+            action = "project_payall_task_peso_action"
+        />
+    </data>
+</odoo>
