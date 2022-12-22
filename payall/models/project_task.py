@@ -31,6 +31,7 @@ class ProjectTask( models.Model):
     message_ids = fields.One2many(readonly=True)
     activity_ids = fields.One2many(readonly=True)
     peso_computed = fields.Integer(string='Peso', store=True)
+    sprint_computed = fields.Integer(string='Sprint', store=True, readonly=True)
     prioridad_computed = fields.Integer(string='Prioridad', store=True)
 
 
@@ -62,8 +63,10 @@ class ProjectTask( models.Model):
             peso_comp = self.env['payall.task.peso'].search([('name', '=', record.peso.name)])
             record.peso_computed = peso_comp.name
     
-    #@api.onchange('priority_payall')
-    #def _getPrioridadComputed(self):
-    #    for record in self:
-    #        prioridad_comp = self.env['payall.task.priority'].search([('id', '=', record.priority_payall.id)])
-    #        record.prioridad_computed =  prioridad_comp.id
+    @api.model
+    def create(self, vals):
+        task = self.env['project.task'].search([('id', '=', self.parent_id.id)])
+        print('holaaaaaaaaaaaaaa', task.id)
+        vals['sprint'] = task.sprint
+        result = super(ProjectTask, self).create(vals)
+        return result    

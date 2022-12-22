@@ -10,3 +10,4 @@ class ProjectTaskCreateTimesheet( models.TransientModel):
         comodel_name = "payall.task.type",
         help = "Seleccione la opción que describe con mayor precisión la actividad ejecutada"
     ) 
+    

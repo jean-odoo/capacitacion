@@ -9,7 +9,7 @@
                 <xpath expr="//field[@name='parent_id']" position="after">
                     <field name = "sprint" />
                     <field name = "peso" required = "1" />
-                    <field name = "priority_payall" string="Prioridad de HU" required = "1"/>
+                    <field name = "priority_payall" string="Prioridad" required = "1"/>
                     <field name = "peso_computed" required = "1" invisible='1' />
                     <field name = "prioridad_computed" required = "1" invisible='1' />
                 </xpath>
@@ -31,7 +31,7 @@
                 <xpath expr="//button[@name='action_open_task']" position="before">
                     <field name="peso"/>
                     <field name="priority_payall"/>
-                    <field name="line_type"/>
+                    <field name="sprint" />
                 </xpath>
 
                 <xpath expr="//div[hasclass('oe_chatter')]" position='replace'>
