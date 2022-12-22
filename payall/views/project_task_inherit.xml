@@ -4,7 +4,7 @@
             <field name="name">project.task.form2.inherited</field>
             <field name="model">project.task</field>
             <field name="inherit_id" ref="project.view_task_form2"/>
-            <field name="groups_id" eval="[(4, ref('payall.payall_project_user'),),(30, ref('__export__.res_groups_30_8615dee9'))]"/>
+            <field name="groups_id" eval="[(4, ref('payall.payall_project_user')),(30, ref('__export__.res_groups_30_8615dee9'))]"/>
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='parent_id']" position="after">
                     <field name = "sprint" />
