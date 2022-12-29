@@ -37,7 +37,6 @@
         'views/account_analytic_line_inherit.xml',
         'views/project_task_view_graph_inherited.xml',
         'views/project_task_inherit.xml',
-        'views/project_task_pmo_inherit.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
